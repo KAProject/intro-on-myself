@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+    <!-- <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
+      rel="stylesheet"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>KUBERACHAR</title>
+
+    <style>
+        /* body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        } */
+        #loading {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+        #loading video {
+            width: 100%;
+            /* height: 100vh; */
+            height: auto;
+        }
+        #content {
+            opacity: 0;
+            transition: opacity 0.5s ease-in;
+        }
+        #content.loaded {
+            opacity: 1;
+        }
+
+        @media (max-width: 576px) {
+            #loading video{
+                width: 500px;
+                height: 900px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="loading">
+        <video id="loadingVideo" autoplay muted>
+            <source src="intro_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- <video id="video" controls autoplay>
+        <source src="intro_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video> -->
+
+    <br>
+
+    <div class="head">
+        <!-- <p class="name">KUBERACHAR A M</p> -->
+        <img id="my_name" src="Name.png" alt="Kuberachar">
+        <img id="my_photo" src="my_photo.jpg" alt="Photo">
+        <!-- <img id="my_name" src="200.png" alt="Kuberachar"> -->
+    </div>
+
+    <hr>
+
+    <div class="thought">
+        <marquee behavior="alternate" direction="" scrollamount="1">The Power of Imagination make us Infinet</marquee>
+    </div>
+
+    <hr>
+
+    <div class="bio">
+        <p> <b><span style="text-decoration: underline;">Kuberachar A M</span></b> <br> Computer Science Engineering <br>kuberachar01@gmail.com <br> 6366264470</p>
+    </div>
+
+    <br>
+
+    <div class="my_accounts">
+        | <span class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp; <a href="https://www.linkedin.com/in/kuberachar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin"><i class="fa-brands fa-linkedin"></i></a> <span class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp; | <span class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;
+        <a href="https://x.com/kuberachar?t=O_B00DmgvTFI1_0ofvTinw&s=08" class="twitter"><i class="fa-brands fa-x-twitter"></i></a> <span class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp; | <span class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;
+        <a href="https://www.instagram.com/kuberkushi07_acharya/" class="instagram"><i class="fa-brands fa-instagram"></i></a> <span class="space">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp; |
+    </div>
+
+    <br>
+    <!-- <p>This is KUBERACHAR a Computer Science Engineering Student at MS Engineering College, Bangalore,</p> -->
+    <p id="intro_lines">This is KUBERACHAR, an accomplished professional with a robust academic background and a diverse skill set, honed through years of dedicated study and practical experience. My educational journey includes Bachelor of Engineering from M S Engineering College, where I specialized in Computer Science Engineering field. This rigorous academic training has equipped me with a comprehensive understanding of technical skills. <br>Throughout my education, I have developed a strong proficiency in technology based skills, including Web Development, Git Cntrol, Logo Creation.</p>
+
+    <div class="service">
+        <h2>Service You can get</h2>
+        <li>Webpage Design</li><br><li>Website Building</li><br><li>Video Thumbnail</li><br><li>Logo Creation</li><br><li>Visiting card design</li><br><li>Content Creation</li><br><li>Hand Written to text Convertion</li>
+    </div>
+
+    <p id="last_line">&nbsp;&nbsp;&nbsp;&nbsp; Contact to <span><b>6366264470</b></span> to get the service with customer friendly prices</p>
+
+    <br>
+    <script src="script.js"></script>
+    <script>
+        const loading = document.getElementById('loading');
+        const content = document.getElementById('content');
+        const loadingVideo = document.getElementById('loadingVideo');
+        
+        loadingVideo.addEventListener('ended', () => {
+            loading.style.display = 'none';
+            content.classList.add('loaded');
+        });
+    </script>
+</body>
+</html>

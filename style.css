@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+    border: 5px solid rgba(183, 242, 165, 0.9);
+    background: linear-gradient(110.5deg, rgba(196, 246, 249, 0.9) 22.8%, rgba(253, 37, 4, 0.259) 64.6%);
+}
+
+/* #video {
+    width: 100%;
+    height: 100%;
+} */
+
+.head{
+    #my_name{
+        /* color: rgb(30,144,255); */
+        width: 570px;
+        height: 125px;
+        position: relative;
+        top: -60px;
+        left: 30%;
+        /* left: 150px; */
+        /* font-size: 60px; */
+        display: inline;
+        /* background-image: url(my_photo.jpg); */
+    }
+    #my_photo{
+        width: 250px;
+        height: 250px;
+        /* display: flex; */
+        position: relative;
+        left: 40%;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Styles for phones */
+    .head{
+        #my_name{
+            width: 280px;
+            height: 80px;
+            top: -10px;
+            left: 9px;
+            /* font-size: 25px; */
+        }
+        #my_photo{
+            width: 80px;
+            height: 80px;
+            left: 1%;
+            /* border-radius: 0%; */
+        }
+    }
+  }
+
+.thought{
+    background: linear-gradient(110.5deg, rgba(196, 213, 249, 0.9) 22.8%, rgba(66, 253, 4, 0.259) 64.6%);
+    
+}
+
+.bio{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 370px;
+    padding: 10px 20px 10px 20px;
+    width: 50%;
+    text-align: center;
+    box-shadow: rgba(12, 223, 202, 0.8) 0px 30px 60px -12px inset;
+    border-radius: 20px;
+    color: rgba(147, 14, 236, 0.907);
+}
+
+@media (max-width: 576px) {
+    /* Styles for phones */
+    .bio{
+        padding: 10px 70px 10px 70px;
+        left: 26px;
+        font-size: small;
+    }
+}
+
+.my_accounts{
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+
+    .instagram{
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);-webkit-background-clip: text;
+        /* Also define standard property for compatibility */
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .twitter{
+        color: black;
+    }
+
+    .linkedin{
+        color: #0077B5;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Styles for phones */
+    .my_accounts{
+        .space{
+            display: none;
+        }
+    }
+}
+
+#intro_lines{
+    padding: 10px;
+    text-align: justify;
+    font-family: Papyrus, fantasy;
+}
+
+@media (max-width: 576px) {
+    #intro_lines{
+        font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    }
+}
+
+.service{
+    padding-left: 50px;
+
+    li{
+        width: 18vw;
+        padding-left: 10px;
+        border-radius: 20px;
+        box-shadow: rgba(12, 223, 202, 0.8) 0px 30px 60px -12px inset;
+        
+    }
+}
+
+@media (max-width: 576px) {
+    .service{
+        padding-left: 10px;
+        li{
+            padding: 3px;
+            padding-left: 15px;
+            width: 80vw;
+        }
+    }
+}
+
+#last_line{
+    font-size: 15px;
+    text-align: center;
+}
